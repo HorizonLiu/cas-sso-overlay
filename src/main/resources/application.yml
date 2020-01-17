@@ -1,0 +1,19 @@
+server:
+  port: 18082
+  context-path: /cas
+  ssl:
+    key-store: file:./etc/thekeystore
+    key-store-password: changeit
+    key-password: changeit
+
+cas:
+  tgc:
+    secure: false
+  serviceRegistry:
+    initFromJson: true
+
+rest:
+  connection:
+    connection-request-timeout: 10000
+    connect-timeout: 10000
+    read-timeout: 10000
